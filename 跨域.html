@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    (function() {
+
+        function fun(data) {
+            console.log(data)
+        }
+
+        window.fun = fun;
+
+    })();
+    </script>
+    <script src="https://api.douban.com/v2/movie/in_theaters?count=5&&callback=fun"></script>
+</body>
+
+</html>
